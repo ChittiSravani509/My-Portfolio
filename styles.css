@@ -1,0 +1,261 @@
+@font-face { font-family: teko; src: url('fonts/Teko-Regular.ttf'); } 
+@font-face { font-family: teko; font-weight: bold; src: url('fonts/Teko-Bold.ttf');}
+@font-face { font-family: teko; font-weight: lighter; src: url('fonts/Teko-Light.ttf');}
+* { margin:0; padding:0; box-sizing:border-box; }
+body{
+   background-image: url(img/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size:100% 100%;
+	  background-attachment:fixed;
+    margin: 0px;
+	  transition: 500ms;
+    margin: 10px 10px 10px 10px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.home{
+  height: 100vh;
+ 
+}
+.topnav {
+  overflow: hidden;
+ transition: 5s; 
+}
+.topnav a {
+  font-family:Teko,Helvetica, sans-serif ;
+  color: #f2f2f2;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 30px 30px;
+}
+.div a:hover{
+  color: aqua;
+}
+
+a { 
+  color: inherit; 
+} 
+a:hover{ 
+  color: inherit; 
+} 
+
+.topnav a:hover{
+  color: aqua;
+}
+.topnav .logo{
+  float: left;
+  padding: 15px 0px;
+  font-size: 35px;
+}
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav .logo{
+    display: block;
+    float: left;
+    margin-left: 10px;
+    padding: 15px 0px;
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 8000px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+.photo{
+  margin: 40px 160px;
+  padding-top: 40px;
+  height: 400px;
+  background-color: blanchedalmond;
+}
+
+
+nav {
+  float: right;
+  width: 60px;
+  margin-top: 150px;
+  transition: all 0.3s linear;
+  margin-right: -5%;
+ 
+}
+
+nav ul {
+ 
+  margin-top: 0;
+  margin-bottom: 0rem;
+  list-style-type:none;
+}
+
+nav li {
+  
+  height: 45px;
+  position: relative
+}
+
+nav li a {
+  color: #fff !important;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 45px;
+  transition: all .3s linear;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+nav li a i {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+  font-size: 23px
+}
+
+ul li a span {
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: lowercase
+}
+
+nav ul a:hover {
+  z-index: 1; 
+  width: 0%;
+}
+
+nav ul li:hover a span {
+  float: right;
+  width: 350px;
+  display: block;
+  font-size: 15px;
+}
+
+
+nav ul li:nth-child(2):hover a span
+{
+  float: right;
+  width: 300px;
+  display: block;
+  font-size: 15px;
+}
+
+nav ul li:last-child:hover a span
+{
+  float: right;
+  width: 200px;
+  display: block;
+  font-size: 15px;
+}
+
+.inner{
+  margin-left: 50px;
+}
+
+h1{
+  color: #f2f2f2;
+  font-size: 60px;
+}
+.heading{
+  vertical-align: middle;
+  padding-left: 10%;
+  padding-top: 12%;
+}
+.para{
+  width: 65%;
+  padding-top: 3%;
+  color: #f2f2f2;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.resume{
+  background-size: cover;
+  height: 100vh;
+}
+.transition{
+  margin: -10px;
+  background-color: rgba(0, 0, 0, 0.479);
+}
+.about{
+  color: #f2f2f2;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.round{
+  border-radius: 20px;
+  margin-right: 16px;
+  
+}
+
+.columns{margin-bottom:2rem}
+ul{
+  list-style-type: none;
+  font-size: 20px;
+}
+
+ul li{
+  color: #f2f2f2c4;
+}
+ul .head{
+  color: rgba(255, 255, 255, 0.925);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bottom {
+  padding-top: 20px;
+  padding-right: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+ 
+}
+.teko{
+  font-family:Teko,Helvetica, sans-serif ;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.secondnav {
+  overflow: hidden;
+ transition: 5s; 
+}
+.secondnav a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f2f2f2;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 30px 30px;
+}
+
+.secondnav a:hover{
+  color: aqua;
+}
